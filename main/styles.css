@@ -9,6 +9,10 @@
     scroll-behaviour: smooth;
 }
 
+body {
+    scroll-behaviour: smooth;
+}
+
 :root {
     --main-color: #151515;
     --accent-color: #7000FF;
