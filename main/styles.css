@@ -6,11 +6,6 @@
     font-size: 20px;
     /* font-family: 'Lexend', sans-serif; */
     /* font-family: 'Lexend Giga', sans-serif; */
-    scroll-behaviour: smooth;
-}
-
-body {
-    scroll-behaviour: smooth;
 }
 
 :root {
@@ -242,50 +237,18 @@ nav ul li a:hover {
     position: relative;
 }
 
-@keyframes slide {
-    from {
-        transform: translateX(0%);
-    } to {
-        transform: translateX(-100%);
-    }
-}
-
 .marquee {
-    margin-top: 20em;
     white-space: nowrap;
     overflow: hidden;
-    display: flex;
     position: relative;
     border-radius: 32px;
-    box-shadow: -15px -15px 21px 0px rgba(255, 255, 255, 0.20), 10px 10px 25px 0px rgba(0, 0, 0, 0.25);
-}
-
-.marquee::before {
-    content: '';
-    position: absolute;
-    left: 0;
-    top: 0;
-    width: 20%;
-    height: 100%;
-    background-image: linear-gradient(to right,rgba(255, 255, 255, 0.5), rgba(0,0,0,0));
-    z-index: 9999;
-
-}
-
-.marquee::after {
-    content: '';
-    position: absolute;
-    right: 0;
-    top: 0;
-    width: 20%;
-    height: 100%;
-    background-image: linear-gradient(to left,rgba(255, 255, 255, .5), rgba(0,0,0,0));
-    z-index: 9999;
-
+    width: 100%;
 }
 
 .button-wrapper {
+    width: 100%;
     display: flex;
+    justify-content: center;
     animation: 50s slide infinite linear ;
 }
 
